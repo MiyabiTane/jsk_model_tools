@@ -11,9 +11,8 @@
      (setq tomato (make-sphere 25))
      (send tomato :locate #f(0 0 0))
      (send tomato :set-color :red)
-     (setq points (list #f(-15 0 0) #f(-5 5 0) #f(0 15 0) #f(5 5 0) #f(15 0 0) #f(5 -5 0) #f(0 -15 0) #f(-5 -5 0)))
+     (setq points (list #f(-15 0 23) #f(-5 5 23) #f(0 15 23) #f(5 5 23) #f(15 0 23) #f(5 -5 23) #f(0 -15 23) #f(-5 -5 23)))
      (setq e2 (make-prism points 3))
-     (send e2 :locate #f(0 0 23))
      (send e2 :set-color :forestgreen)
      (send tomato :assoc e2)
      
